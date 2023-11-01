@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+
+    /* Remove the jumbotron's default bottom margin */
+    .jumbotron {
+      margin-bottom: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      color:white;
+      background-color: #222222;
+      padding: 25px;
+    }
+
+    .fa {
+      padding: 20px;
+      font-size: 50px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      /* border-radius: 50%; */
+    }
+
+
+
+
+
+
+
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-youtube-play {
+      background: #bb0000;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+
+      /* Banner Image Responsive Size --> CSS Calc Function */
+      img{
+      display:flex;
+      width:calc(100% - 0px - 0px - 0px - 0px );
+
+      height:350px;
+
+ 
+}
+
+
+.panel-default{
+  background-color: white;
+  color:#222222;
+  
+}
+
+.panel-heading{
+  background-color: white
+}
+  </style>
+  <!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- External style css  -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- <div class="jumbotron">
+    <div class="container text-center">
+      <h1>Online Store</h1>
+      <p>Mission, Vission & Values</p>
+    </div>
+  </div> -->
+
+
+   <!-- Banner Image  -->
+
+   <img   src="banner-image/banner.jpg" alt=""  > 
+   
+
+
+  <nav class="navbar navbar-inverse">
+    <!-- <div class="container-fluid"> -->
+
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="#">Logo</a> -->
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <!-- navbar center ===>style.css  -->
+        <ul class="nav navbar-nav navbar-center">
+          <li class=""><a href="/navbar/index.php">HOME</a></li>
+          <li><a href="/navbar/about.php">ABOUT </a></li>
+
+          <!-- Wedding ropdown -->
+
+
+          <!-- <li class="dropdown"><a class="data-toggle" href="#">WEDDING</a></li> -->
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">WEDDING <span
+                class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/navbar/holud-stage.php">HOLUD DECOR & IDEAS</a></li>
+              <li class="divider"></li>
+              <li><a href="/navbar/lighting.php">LIGHTING & IDEAS </a></li>
+              <li class="divider"></li>
+              <li><a href="/navbar/wedding-stage">WEDDING STAGE</a></li>
+              <li class="divider"></li>
+              <li><a href="/navbar/wedding-kunjo.php">WEDDING KUNJO</a></li>
+              <!-- <li class="divider"></li>
+              <li><a href="#">ROYAL THEME WEDDING <br> STAGE DESIGN</a></li> -->
+              <li class="divider"></li>
+              <li><a href="/navbar/wedding-photography.php">WEDDING PHOTOGRAPY</a></li>
+            </ul>
+          </li>
+
+
+          <!-- Birthday dropdown menu  -->
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">BIRTHDAY <span
+                class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/navbar/birthday-decor-theme.php">BIRTHDAY DECOR THEME</a></li>
+              <li class="divider"></li>
+              <li><a href="#">BIRTHDAY PHOTOGRAPY</a></li>
+              <!-- <li class="divider"></li>
+              <li><a href="#">BIRTHDAY GAMES & <br> ACTIVITIES</a></li> -->
+            </ul>
+          </li>
+
+          <!-- Event Management dropdown menu -->
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SOUND & DJ <span
+                class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="/navbar/sound-system.php">SOUND SYSTEM</a></li>
+            <li class="divider"></li>
+            <li><a href="/navbar/dj.php">DJ (DISC JOCKEY)</a></li>
+            </ul>
+          </li>
+
+          <!-- Price & Package Dropdown Menu -->
+
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PRICE & PACKAGE <span
+                class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">WEDDING PHOTOGRAPHY <br> PRICE</a></li>
+              <li class="divider"></li>
+              <li><a href="#">EVENT PHOTOGRAPHY <br> PRICE</a></li>
+              <li class="divider"></li>
+              <li><a href="#">HD VIDEO PRICE</a></li>
+            </ul>
+          </li>
+
+          <!-- Other Site  -->
+
+          <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">OTHER SITE <span
+                class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">WEDDING PLANNER <br> BANGLADESH </a></li>
+              <li class="divider"></li>
+              <li><a href="#">BIRTHDAY PARTY <br> PLANNER DHAKA,BD</a></li>
+              <li class="divider"></li>
+              <li><a href="#">EVENT MANAGEMENT <br> BANGLADESH </a></li>
+            </ul>
+          </li> -->
+
+           <!-- videos -->
+
+           <li class=""><a href="/navbar/tiktok-video.php">VIDEOS</a></li>
+
+          <!-- contact page  -->
+
+
+          <li><a href="/navbar/contact.php">CONTACT </a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Birthday Decor Theme Page -->
+
+  <!-- Text Stying -->
+
+  <div class="container mt-40   text-center" >
+
+    <!-- <h2>Wedding Plannning,Dhaka</h2>
+    <br>
+    <br>
+   
+
+
+    <p>We’re experts at creating innovative and eye-catching themed event / wedding  decor.</p>
+
+
+
+    <br>
+
+    <p>From traditional to ultra-modern we can style every surface of your event venue,</p>
+
+    <br>
+
+
+    <p>from floor to ceiling and everything in-between.</p>
+
+    <br>
+    <p>Fast Booking:01867384440</p> -->
+
+
+
+
+    <!-- 
+   <div class="row ">
+    <div class="col-lg-10"> -->
+
+
+    <!-- <div class="panel panel-default"> -->
+
+  </div>
+
+
+  
+
+
+
+
+  <!-- Under The Sea Theme -->
+
+
+ 
+
+
+
+
+
+
+
+<!-- 
+<br> -->
+
+
+
+
+
+
+
+
+
+<!-- <style>
+
+.img{width:100px;height:auto}
+
+
+</style> -->
+
+
+
+
+<!-- 
+<script>
+
+
+
+function submit(){
+    window.history.forward()
+}
+    
+</script> -->
+
+
+
+
+<div class='container text-center  '>
+
+<!-- <h4 class="text-center "><strong>BIRTHDAY PHOTOGRAPHY</strong></h4> -->
+
+
+<div class="panel panel-default">
+
+<div class="panel-heading ">
+
+<h4 class="" style="font-size:15px">BIRTHDAY PHOTOGRAPHY</h4>
+
+</div>
+<br>
+
+<div class="panel-body " style="margin-top:20x;margin-left:20px;margin-right:20px;margin-bottom:0px;">
+  
+<!-- <div class="panel-heading"> -->
+
+
+  <!-- <br>
+<div class="panel-body"> -->
+
+
+
+
+<!-- <div class="panel panel-default">
+<div class="panel-body  "> -->
+
+
+
+<!-- <h4 class="text-center"><strong>BIRTHDAY PHOTOGRAPHY</strong></h4> -->
+
+
+  <div class="row">
+
+
+
+
+ 
+
+
+
+<div class='col-md-3'>
+<div class='thumbnail'>
+ 
+  <a href='images/img1.jpg' width='1111px' height='741px'>
+
+  <img src='images/img1.jpg'width='600px' height='300px'>
+  
+  </a>
+</div>
+</div>
+
+
+
+<div class='col-md-3'>
+<div class='thumbnail'>
+ 
+  <a href='images/img2.jpg' width='1111px' height='741px'>
+
+  <img src='images/img2.jpg'width='600px' height='300px'>
+  
+  </a>
+</div>
+</div>
+
+
+
+<div class='col-md-3'>
+<div class='thumbnail'>
+ 
+  <a href='images/img3.jpg' width='1111px' height='741px'>
+
+  <img src='images/img3.jpg'width='600px' height='300px'>
+  
+  </a>
+</div>
+</div>
+
+
+
+
+<div class='col-md-3'>
+<div class='thumbnail'>
+ 
+  <a href='images/img4.jpg' width='1111px' height='741px'>
+
+  <img src='images/img4.jpg'width='600px' height='300px'>
+  
+  </a>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- </div>
+</div> -->
+</div>
+
+</div>
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer -->
+  <footer class="container-fluid">
+
+    <!-- <p class="text-left" >Call Number: <b>01867384440</b></p> -->
+
+
+
+
+    <p class="text-center">
+      <br>
+      <br>
+
+      <b><a href="#" class="fa fa-facebook"></a></b>
+      <b><a href="#" class="fa fa-twitter"></a></b>
+      <b><a href="#" class="fa fa-youtube-play"></a></b>
+      <b><a href="#" class="fa fa-instagram"></a></b>
+    </p>
+    <br>
+    <p class="text-center">All Copyright Reserved 2023</p>
+    <br>
+    <br>
+    <p class="text-right">Made by <a href="https://github.com/r3k4t" target="_blank">
+        <span class="love-symbol"> &#10084</span> <span class="rahatkhantusar">Rahat Khan Tusar</span> <span
+          class="love-symbol"> &#10084</span></a> </p>
+
+
+
+
+
+
+</body>
+
+</html>
