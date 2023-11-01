@@ -69,17 +69,55 @@
     }
 
       /* Banner Image Responsive Size --> CSS Calc Function */
-      img{
-      display:flex;
-      width:calc(100% - 0px - 0px - 0px - 0px );
+    img{
+  display:flex;
+  flex-wrap: wrap;
+  width:calc(100% - 0px - 0px - 0px - 0px);
+  height:400px;
 
-      height:350px;
+}
 
- 
+h4{
+font-size:15px;
 }
 
 
-.panel-default{
+
+@media (max-width:952px){
+  img{
+  display:flex;
+  flex-wrap: wrap;
+  width:calc(100% - 0px - 0px - 0px - 0px);
+  height:180px;
+  /* height:1024px;
+  width:3024px */
+}
+
+}
+
+
+@media (max-width:952px){
+ h4{
+   font-size:13px;
+  
+  /* height:1024px;
+  width:3024px */
+}
+
+}
+
+@media (max-width:952px){
+
+  nav ul li a {
+    font-size:12px;
+  }
+
+
+}
+
+
+
+/* .panel-default{
   background-color: white;
   color:#222222;
   
@@ -87,7 +125,7 @@
 
 .panel-heading{
   background-color: white
-}
+} */
   </style>
   <!-- Add icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
